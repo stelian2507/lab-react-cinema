@@ -9,7 +9,7 @@ const path = require('path');
 const cors = require('cors');
 
 mongoose
-  .connect('mongodb://localhost/movies-dev', { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true })
+  .connect('dotenv.mongodb', { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true })
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
   })
