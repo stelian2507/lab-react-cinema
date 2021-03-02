@@ -18,6 +18,7 @@ import MovieInfo from './components/movieInfo';
 //   default:
 //     break;
 // }}
+//
 
 class App extends Component {
   render() {
